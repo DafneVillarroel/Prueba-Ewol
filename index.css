@@ -1,0 +1,105 @@
+body{
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    margin-block-start: 100px;
+}
+h1{
+    text-align: center;
+}
+.inputs{
+    text-align: center;
+}
+
+.button-container{
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.containerElementos{
+    display: flex;
+    justify-content: space-around;
+}
+.elementosContent{
+    margin-block-start: 50px;
+}
+.reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 20px;
+}
+
+.inputcontador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color:white;
+    font-size: 40px;
+    background-color: rgb(0, 0, 0);
+    width: 220px;
+    height: 40px;
+}
+.rojo{
+    background-color: #D50000;
+}
+.deshabilitar{
+background-color: grey;
+opacity: 0.3;
+}
+span{
+    color: white;
+}
+.onClick{
+    background-color: rgb(15, 15, 15);
+    border-radius: 5px;
+}
+.vueltas{
+    display: flex;
+}
+button {
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-size: 15px;
+    height: 50px;
+    font-family: 'Inconsolata', monospace;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .3s;
+    margin-block-start: 15px;
+   }
+   
+   button:active,
+   button:hover {
+    outline: 0;
+   }
+   
+   button span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 20px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+   
+   }
+   
+   button:hover span {
+    background: none;
+   }
+   
+   button:active {
+    transform: scale(0.9);
+   }

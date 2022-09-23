@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <title>Prueba Ewol</title>
+</head>
+<body id="body">
+  <div class="inputs">
+    <input type=radio id="id1" name=”radio”>
+    <label for="id1">Contador</label>
+    <input type=radio id="id2" name=”radio”>
+    <label id="id2">Tiempo</label>
+    </div>
+    <div  class="containerElementos">
+     <div class="elementosContent">
+      <h1>Contador</h1>
+       <div class="reset">
+        <button id="resetear" >
+          <span class="text">Resetear</span>
+        </button>
+      </div>
+      <div class="content">
+        <div class="button-container">
+        <button id="disminuir">
+          <span class="text">Disminuir</span>
+        </button>
+      <div id="cont">
+        <input type="number" id="contador" class="inputcontador"></input>
+      </div>
+      <div class="button-container">
+        <button id="aumentar">
+          <span class="text">Aumentar</span>
+        </button>
+       </div>
+       </div>
+      </div>
+    </div>
+    <div class="elementosContent">
+      <h1>Temporizador</h1>
+      <div id="containerInputs">
+        <div class="field">
+          <label class="label">Minutos</label>
+          <div class="control">
+            <input class="input" id="minutosTemporizador" type="number" placeholder="Minutos">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Segundos</label>
+          <div class="control">
+            <input class="input" id="segundosTemporizador" type="number" placeholder="Segundos">
+          </div>
+        </div>
+      </div>
+      <h2 id="tiempoEnPantalla">00:00.0</h2>
+      <button id="btnIniciarTemporizador" class="button is-success"><span class="mdi mdi-play">Iniciar temporizador</span></button>
+      <button id="btnPausarTemporizador" class="button is-success"><span class="mdi mdi-pause">Detener temporizador</span></button>
+      <br>
+    </div>
+    <div class="elementosContent">
+      <h1>Cronometro</h1>
+      <h2 id="tiempoRecorrido" class="inputcontador" value="00:00.0"></h2>
+				<button  id="btnComenzar" ><span >Iniciar cronometro</span></button>
+				<button  id="btnParar"><span>Detener cronometro</span></button>
+        <div class="vueltas">
+				<button  id="btnMarcarVuelta"><span>Marcar vuelta</span></button>
+        <button  id="btnDelete" ><span>Borrar vueltas</span></button>
+        </div>
+				<div id="containerMarcarVueltas">
+				</div>
+    </div>
+      </div>
+   <script src="./index.js"></script>
+   </body>
+   </html>
